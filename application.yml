@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: root
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+custom:
+  app:
+    name: "My Spring Boot Application"
