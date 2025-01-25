@@ -5,13 +5,13 @@ FROM openjdk:17-jdk-slim AS build
 WORKDIR /app
 
 # Copy the jar file from the target folder of your project into the container
-COPY target/demo-0.0.1-SNAPSHOT.jar /app/demo.jar
+COPY target/javamaven-0.0.1-SNAPSHOT.jar /app/javamaven.jar
 
 # Expose the port that your application will run on
 EXPOSE 8082
 
 # Define the command to run the application
-CMD ["java", "-cp", "/app/demo.jar"]
+CMD ["java", "-cp", "/app/javamaven.jar"]
 
 
 
